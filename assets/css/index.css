@@ -1,0 +1,548 @@
+section{
+    margin-bottom: 32px;
+}
+.trending{
+    padding: 24px 24px 24px 40px;
+}
+#carousel-trending{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:16px;
+}
+.trending span{
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #000;
+    font-size: 12px;
+    padding: 8px;
+}
+.trending .slick-next{
+    right: 0;
+    top: 13px;
+    left: 100%;
+}
+.trending .slick-prev{
+    right: 8px;
+    top: 13px;
+    left: unset;
+}
+
+/* -----------------------------news end col left---------------------------- */
+
+.title-group{
+    border-bottom: 2px solid #365c7b;
+    margin-bottom: 16px;
+}
+.title-group span{
+    background-color: #365c7b;
+    font-size: 14px;
+    padding: 8px 16px;
+    display: inline-block;
+}
+.title-group button{
+    padding-left: 16px;
+    font-size: 14px;
+    color: #aaa;
+    border: none;
+    outline: none;
+    background: unset;
+}
+#news .world-news{
+    margin-bottom: 32px;
+}
+#news .art-left .wrap-img{
+    object-fit: cover;
+    height: 235px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+/*#news .tab-content{
+    display: none;
+}*/
+#news .cat-group .active{
+    color: #385c7b;
+}
+#news .art-flex, #news .world-news .art-left, #section-1 .form-inner{
+    animation-name: art-effect;
+    animation-duration: 0.7s;
+}
+#news .art-left img, #news .world-news .art-flex img, #section-1 .form-inner .wrap-img{
+    animation: img-effect 0.7s ease-in-out;
+}
+#news .travel-guides{
+    margin-bottom: 35px;
+}
+#news .travel-guides .wrap-img{
+    object-fit: cover;
+    height: 150px;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+#news .tech-heath .form-inner .wrap-img{
+    height: 220px;
+    object-fit: cover;
+}
+#news .tech-heath .art-flex{
+    margin: 16px 0;
+}
+
+/* -----------------------------news end col left---------------------------- */
+
+
+/* ------------------------news col right ------------------------- */
+
+#news .weather-group{
+    margin-bottom: 56px;
+}
+#news .weather-group .wt-place{
+    display: flex;
+    justify-content: space-between;
+}
+#news .weather-group .wt-place button{
+    color: white;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 22px;
+}
+#news .weather-group .wt-condition{
+    color: #b3b3b3;
+}
+
+#news .weather-group .wt-temperature{
+    min-height: 100px;
+}
+#news .weather-group .wt-temperature .wt-now{
+    font-size: 40px;
+}
+#news .weather-group .wt-temperature .wt-lo-hi i{
+    color:#b3b3b3;
+    font-size: 14px;
+    padding: 4px;
+}
+#news .weather-group .wt-temperature .wt-lo-hi p{
+    font-size: 12px;
+    margin: 0;
+}
+#news .weather-group .wt-temperature .wt-lo{
+    position: absolute;
+    bottom: 0;
+}
+#news .weather-group .wt-info{
+    padding: 8px;
+    margin: 16px 0 0 0;
+    border-top: 2px solid #222527;
+    display: flex;
+    font-size: 12px;
+    justify-content: center;
+}
+#news .weather-group .wt-info .wt-inf-detail i{
+    padding: 0 4px;
+}
+#news .weather-group .wt-info .wt-inf-detail{
+    padding: 0 16px;
+    margin-top: 4px;
+}
+#news .weather-group .wt-week{
+    background: #222527;
+    display: flex;
+    padding: 4px 0;
+}
+#news .weather-group .wt-week .wt-day{
+    width: 20%;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px;
+}
+#news .weather-group .wt-week .wt-day p{
+    margin: 4px 0;
+}
+#news .weather-group .wt-week .wt-day p:first-child{
+    color: #b3b3b3;
+    text-transform: uppercase;
+    line-height: 1;
+}
+#news .weather-group .wt-week .wt-day p:nth-child(2){
+    color: #b3b3b3;
+    font-size: 20px;
+}
+#news .social-list{
+    margin-bottom: 40px;
+}
+#news .social-list .bg-fb{
+    background: #516eab;
+}
+#news .social-list .bg-tw{
+    background: #29c4f6;
+}
+#news .social-list .bg-yt{
+    background: #e14e42;
+}
+#news .social-list .social-box{
+    margin: 8px 0;
+    padding: 10px 0;
+    display: flex;
+    cursor: pointer;
+    justify-content: space-between;
+}
+#news .social-list .social-box span:first-child{
+    border-right: 1px solid #ffffff38;
+    padding: 0 10px;
+}
+#news .social-list .social-box span{
+    padding: 6px;
+}
+#news .social-list .social-box .social-button{
+    padding: 0 10px;
+    border-left: 1px solid #ffffff38;
+}
+#news .social-list .social-box:hover{
+    background: #444444;
+}
+#news .ads{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 24px;
+}
+#news .most-popular .wrap-img{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+/* ------------------------end news col right ------------------------- */
+
+
+/* ----------------------animation news---------------------- */
+
+@keyframes img-effect{
+        from{
+            opacity: 0;
+            transform: scale(0.98);
+        }
+        to{
+            opacity: 1;
+            transform: scale(1);
+        }
+}
+
+@keyframes art-effect{
+    from{
+        opacity: 0.5;
+        transform: translate(0,-15px);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0,0);
+    }
+}
+
+/* ----------------------end animation news---------------------- */
+
+
+/* ------------------------------------section art & sport-news-------------------------- */
+
+#art .form-inner .wrap-img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-image: url('../images/article-6.jpg');   
+}
+#art .form-inner .wrap-img .title-large{
+    top: 38%;
+    text-align: center;
+}
+#sport-news .art-flex .wrap-img, #lastest-article .art-flex .wrap-img {
+    height: 150px;
+    width: 218px;
+}
+#sport-news .title-group {
+    border-bottom: 2px solid #66bb6a;
+}
+#sport-news .title-group span{
+    background: #66bb6a;
+}
+#sport-news .recipes .title-group {
+    border-bottom: 2px solid #e91d63;
+}
+#sport-news .recipes .title-group span{
+    background: #e91d63;
+}
+#video > .title-medium{
+    background: #000;
+    padding: 10px;
+    margin: 0;
+}
+#video .col-8{
+    padding-right:0;
+}
+#video .col-4{
+    padding-left:0;
+}
+#video .video-title{
+    background: #375c7b;
+    position: relative;
+    padding: 8px;
+    display: flex;
+}
+#video .video-title a{
+    font-size: 18px;
+    display: inline-block;
+    padding: 10px 18px 10px 10px;
+    border-right: 1px solid #ffffff26;
+}
+#video .video-title .title-medium{
+    font-size: 17px;
+    margin-top: 0;
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+#video .video-title .title-medium .text-info{
+    margin: 4px 0;
+}
+#video .video-list article{
+    padding: 4px 16px;
+}
+#video .video-list{
+    background: #222222;
+    overflow: hidden;
+    overflow-y: auto;
+    height: 76.5%;
+}
+/* width */
+#video .video-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+#video .video-list::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+/* Handle */
+#video .video-list::-webkit-scrollbar-thumb {
+    background: #919191; 
+    border-radius: 10px;
+}
+
+#video .video-list .active-vd{
+    border-left: 3px solid #375c7b;
+    background: #404040;
+}
+#video .video-list article .info-group{
+    margin-bottom: 0;
+}
+#video .video-list article .info-group > a{
+    font-size: 12px;
+}
+#video .video-list article .text-info{
+    font-style: italic;
+}
+#video .video-list article .wrap-img {
+    object-fit: cover;
+    height: 60px;
+    width: 90px;
+    max-width: 100%;
+    margin-bottom: 0px;
+}
+/* ------------------------------------end section art and sport news--------------------------- */
+
+#lastest-article .search-form{
+    position: relative;
+    margin-bottom: 32px;
+}
+#lastest-article .search-form input:focus{
+    border: 1px solid rgb(131, 131, 131);
+}
+#lastest-article .search-form input{
+    width: 77%;
+    outline: none;
+    padding: 8px;
+    border: 1px solid #353535;
+    background: none;
+    color: #fff;
+    font-size: 14px;
+}
+#lastest-article .search-form button{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #444;
+    width: 24%;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    border: 1px solid #444;
+}
+#lastest-article .rc-post{
+    margin: 0;
+    padding: 0;
+}
+#lastest-article .rc-post li{
+    border-bottom: 1px dashed #545454;
+    margin: 0px 12px 8px 12px;
+    list-style: none;
+    padding: 0px 0 14px 0;
+}
+#lastest-article .rm-bd li{
+    border-bottom: none;
+}
+#lastest-article .rc-post li:last-child{
+    border-bottom: none;
+}
+/* -----------animation weather animation in codepen -------------- */
+.icon-wt-animation{
+    position: relative;
+}
+.icon {
+    display: inline-block;
+    padding-top: 55px;
+    font-size: 11px; /* control icon size here */
+  }
+  
+  .cloud {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 27%;
+    width: 3.6875em;
+    height: 3.6875em;
+    background: #181818;
+    border-radius: 50%;
+    box-shadow: -2.1875em 0.6875em 0 -0.6875em #181818, 2.0625em 0.9375em 0 -0.9375em #181818, 0 0 0 0.375em #fff, -2.1875em 0.6875em 0 -0.3125em #fff, 2.0625em 0.9375em 0 -0.5625em #fff;
+  }
+  .cloud:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: -0.5em;
+    display: block;
+    width: 4.5625em;
+    height: 1em;
+    background: #181818;
+    box-shadow: 0 0.4375em 0 -0.0625em #fff;
+  }
+  .cloud:nth-child(2) {
+    z-index: 0;
+    background: #fff;
+    box-shadow:
+      -2.1875em 0.6875em 0 -0.6875em #fff,
+      2.0625em 0.9375em 0 -0.9375em #fff,
+      0 0 0 0.375em #fff,
+      -2.1875em 0.6875em 0 -0.3125em #fff,
+      2.0625em 0.9375em 0 -0.5625em #fff;
+    opacity: 0.3;
+    transform: scale(0.5) translate(6em, -3em);
+    animation: cloud 4s linear infinite;
+  }
+  .cloud:nth-child(2):after { background: #fff; }
+
+  @keyframes cloud {
+    0% { opacity: 0; }
+    50% { opacity: 0.3; }
+    100% {
+      opacity: 0;
+      transform: scale(0.5) translate(-200%, -3em);
+    }
+  }
+
+/* --------------------responsive -------------------- */
+
+@media screen and (max-width: 767px){
+    main .trending{
+        padding: 0 0 8px 0;
+    }
+    main .trending span{
+        margin: 8px auto;
+        padding: 4px 10px;
+    }
+    main .trending .slick-prev, main .trending .slick-next{
+        display: none !important;
+    }
+    main .trending #carousel-trending{
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+    #news .world-news .title-group span {
+        white-space: nowrap;
+    }
+    #news .world-news .cat-group{
+        overflow: auto;
+    }
+    #news .travel-guides .title-medium{
+        display: flex;
+    }
+    #news .travel-guides .title-medium img{
+        object-fit: cover;
+        height: 70px;
+        width: 100px;
+        max-width: 100%;
+    }
+    #news .travel-guides .title-medium span{
+        font-size: 14px;
+        padding-left: 16px;
+    }
+    #news .weather-group .wt-temperature .wt-now {
+        font-size: 28px;
+    }
+    #news .weather-group .wt-temperature .wt-now .show-count-wt {
+        transition: all 0.5s ease-in;
+    }
+    #news .most-popular .art-flex .title-medium{
+        font-size: 14px;
+    }
+    #art .form-inner .wrap-img {
+        width: 100%;
+        height: 160px;
+        padding-bottom: unset;
+        background-size: cover;
+        background-image: url(../images/article-6.jpg);
+    }
+    #art .form-inner .wrap-img a{
+        font-size: 14px;
+    }
+    #art .form-inner .wrap-img .title-large {
+        top: 23%;
+        text-align: center;
+        background: linear-gradient(to bottom, #00000000, #191919);
+    }
+    #sport-news .text-exerpt, #lastest-article .text-exerpt{
+        display: none;
+    }
+    #sport-news .info-group a, #lastest-article .info-group a{
+        font-size: 14px;
+    }
+    #sport-news .art-flex .wrap-img, #lastest-article .art-flex .wrap-img{
+        width: 100px;
+        height: 69px;
+    }
+    #video .col-4{
+        padding: 16px;
+    }
+    #video .col-8 {
+        padding-right: 16px;
+    }
+    #lastest-article .page-nav .page-detail{
+        display: none;
+    }
+    #lastest-article .pagination-page{
+        margin: 0 auto;
+    }
+    #fl-us .col-2{
+        flex: 0 0 33.33%;
+        max-width: 33.33%;
+    }
+    #video .video-list {
+        background: #222222;
+        overflow: hidden;
+        overflow-y: scroll;
+        height: 208px;
+    }
+}

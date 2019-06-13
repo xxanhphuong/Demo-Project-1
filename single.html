@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link REL="SHORTCUT ICON" HREF="assets/images/logo.ico">
+    <link rel="stylesheet" href="assets/css/single.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Single page</title>
+</head>
+
+<body>
+    <header>
+        <div class="menu-mb">
+            <div id="btn-hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="#"><img src="assets/images/logo.png" alt=""></a>
+            <div id="btn-search-mb">
+                <i class="fas fa-search"></i>
+            </div>
+        </div>
+        <div id="navbar">
+            <div class="top-menu">
+                <div class="container">
+                    <div class="row">
+                        <div class="left-top-menu">
+                            <div class="weather">
+                                <i class="fas fa-cloud-moon-rain"></i>
+                                <span>19.9</span>
+                                <sup>C</sup>
+                                <span>Chicago</span>
+                            </div>
+                            <ul>
+                                <li>
+                                    <a href="#">Sign in/Join</a>
+                                </li>
+                                <li>
+                                    <a href="#">Advertisement</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact us</a>
+                                </li>
+                                <li>
+                                    <a href="#">Buy now</a>
+                                </li>
+                            </ul>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="right-top-menu all-center">
+                            <span>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-soundcloud"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-vk"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </span>
+                            <div id="btn-close">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-main">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="search-form">
+                                    <input type="text">
+                                    <button>Search</button>
+                                </div> -->
+                        <div class="left-menu-main">
+                            <div class="row">
+                                <div class="logo all-center">
+                                    <img src="assets/images/logo.png" alt="">
+                                </div>
+                                <ul class="menu-main-menu all-center">
+                                    <li>
+                                        <a href="#">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="archive.html">LifeStyle <i class="fas fa-chevron-down"></i> </a>
+                                        <ul class="sub-menu">
+                                            <li class="menu-item">
+                                                <div class="row">
+                                                    <div class="col-2 cat-group">
+                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'All')"
+                                                            href="#">All</a>
+                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'Art')"
+                                                            href="#">Art</a>
+                                                        <a href="#">Heathy</a>
+                                                        <a href="#">Music</a>
+                                                        <a href="#">Recipes</a>
+                                                        <a href="#">Travel</a>
+                                                    </div>
+                                                    <div class="col-10 menu-art">
+                                                        <div id="All" class="tabcontent" style="display:block;">
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-4.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-2.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-3.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                        </div>
+                                                        <div id="Art" class="tabcontent">
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-4.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-3.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <article>
+                                                                    <a href="#">
+                                                                        <div class="thumbnail-menu">
+                                                                            <img src="assets/images/menu-art-2.jpg" alt="">
+                                                                        </div>
+                                                                        <p>A Thomas Hart Benton Mural, Repurposed as a
+                                                                            Writing Desk</p>
+                                                                    </a>
+                                                                </article>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </li>
+                                    <li>
+                                        <a href="archive-fashion.html">Fashion <i class="fas fa-chevron-down"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Sport <i class="fas fa-chevron-down"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Tech <i class="fas fa-chevron-down"></i> </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Word <i class="fas fa-chevron-down"></i> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn-search">
+                            <a href="#" class="btn-toggle all-center">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <div class="search-form">
+                                <input type="text">
+                                <button>Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <section class="bread-crumb">
+                <span>
+                    <a href="#">Home</a>
+                    <i class="fas fa-angle-right"></i>
+                    <span>
+                        LifeStyles
+                        <i class="fas fa-angle-right"></i>
+                        <span>
+                            Man United skipper again boosted for first England goal after win
+                        </span>
+                    </span>
+                </span>
+            </section>
+
+            <div class="title-single-group">
+                <div class="info-group">
+                    <span class="btn-cat"><a href="#">Fashion</a></span>
+                    <h1>Man United skipper again boosted for first England goal after win</h1>
+                    <div class="text-info">
+                        <span>By <a href="#">Diane Cotez</a></span>
+                        <span> - </span>
+                        <span>November 16, 2015</span>
+                        <span class="view"><i class="fas fa-eye"></i>3000</span>
+                        <span class="comment"><i class="fas fa-comments"></i> 0</span>
+                    </div>
+                    <p class="icon-fl">
+                        <span>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8 col-mb">
+                    <section id="content-post">
+                        <img class="wrap-img" src="assets//images/article-2.jpg" alt="">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, mollitia architecto id dolorum, est cupiditate dolor fugiat consequatur totam saepe laudantium esse necessitatibus nam quam suscipit inventore quisquam aliquam doloremque!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit similique ratione repudiandae veritatis fuga accusamus? Eius dolore aspernatur, eos beatae ipsa facilis voluptatibus consequatur necessitatibus, impedit, ex est sed.</p>
+                        <blockquote>ius dolore aspernatur, eos beatae ipsa facilis voluptatibus consequatur neces</blockquote>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, mollitia architecto id dolorum, est cupiditate dolor fugiat consequatur totam saepe laudantium esse necessitatibus nam quam suscipit inventore quisquam aliquam doloremque!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit similique ratione repudiandae veritatis fuga accusamus? Eius dolore aspernatur, eos beatae ipsa facilis voluptatibus consequatur necessitatibus, impedit, ex est sed.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, mollitia architecto id dolorum, est cupiditate dolor fugiat consequatur totam saepe laudantium esse necessitatibus nam quam suscipit inventore quisquam aliquam doloremque!</p>
+                        <blockquote class="classic-bq">ius dolore aspernatur, eos beatae ipsa facilis voluptatibus consequatur neces</blockquote>
+                        <figure>
+                            <a href="#"><img class="wrap-img" src="assets//images/article-7.jpg" alt=""></a>
+                            <figcaption class="fg-caption">Coffee is the best thing to douse the sunrise with.</figcaption>
+                        </figure>
+                        <p>You are a part of the Rebel Alliance and a traitor! Take her away! Red Five standing by. All right. Well, take care of yourself, Han. I guess that’s what you’re best at, ain’t it? Alderaan? I’m not going to Alderaan. I’ve got to go home. It’s late, I’m in for it as it is.</p>
+                        <p>Oh God, my uncle. How am I ever gonna explain this? Hey, Luke! May the Force be with you. I find your lack of faith disturbing.</p>
+                    </section>
+                    <section class="share-post">
+                        <div class="share-label">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Share</span>
+                        </div>
+                        <p class="icon-fl">
+                            <span>
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </span>
+                            <span>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </span>
+                        </p>
+                    </section>
+                    <section class="post-next-prev add-space">
+                        <div class="post-next">
+                            <div class="text-info"><span>Previous article</span></div>
+                            <a class="a-hover title-medium" href="#">Fashion Week Parties: Night 4</a>
+                        </div>
+                        <div class="post-prev">
+                            <div class="text-info"><span>Next article</span></div>
+                            <a class="a-hover title-medium" href="#">Fashion Week Parties: Night 4</a>
+                        </div>
+                    </section>
+                    <section class="author-box">
+                        <div class="art-flex">
+                            <img class="wrap-img" src="assets/images/avt.jpg" alt="">
+                            <div class="info-group">
+                                <a href="#" class="title-medium a-hover">Jaden smith</a>
+                                <div class="text-info">
+                                    <span><a href="#">http://www.diane-cortez.com</a></span>
+                                </div>
+                                <p class="text-exerpt">My name is Diane Cortez. I'm a social girl from Romania with a big smile and 3 passions: People, Travel and Social Media. I try to make this blog practical, full of great advice and inspiring ideas.</p>
+                                <p>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    </span>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-google-plus-g"></i></a>
+                                    </span>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-twitter"></i></a>
+                                    </span>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    </span>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-vimeo-v"></i></a>
+                                    </span>
+                                    <span>
+                                        <a class="title-medium a-hover" href="#"><i class="fab fa-youtube"></i></a>
+                                    </span>
+                                    <span>
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <div id="comment-box">
+                        <form>
+                            <p class="title-medium">LEAVE A REPLY</p>
+                            <textarea name="" id="" cols="45" rows="8" placeholder="Comment:"></textarea>
+                            <input type="text" placeholder="Name:*">
+                            <input type="text" placeholder="Email:*">
+                            <input type="text" placeholder="website:*">
+                            <label>
+                                <input type="checkbox" checked="checked">
+                                <span> Save my name, email, and website in this browser for the next time I comment.</span>
+                            </label>
+                            <button>Post Comment</button>
+                        </form>
+                    </div>
+                </div>
+                <div id="aside" class="col-4 col-mb">
+                    <div class="add-tick">
+                        <div class="search-form">
+                            <input type="text">
+                            <button>Search</button>
+                        </div>
+                        <div class="title-group">
+                            <span>Recent Post</span>
+                        </div>
+                        <ul class="rc-post">
+                            <li><a class="title-small a-hover" href="#">A Thomas Hart Benton Mural, Repurposed as a
+                                    Writing Desk</a></li>
+                            <li><a class="title-small a-hover" href="#">Making Times Square’s Pedestrian Plazas
+                                    Work</a></li>
+                            <li><a class="title-small a-hover" href="#">How the Guggenheim Keeps Its Galleries
+                                    Immaculate</a></li>
+                            <li><a class="title-small a-hover" href="#">Joan Young Moderates a Conversation about
+                                    Singapore</a></li>
+                        </ul>
+                        <div class="title-group">
+                            <span>Archives</span>
+                        </div>
+                        <ul class="rc-post rm-bd">
+                            <li><a class="title-small a-hover" href="#">Art</a></li>
+                            <li><a class="title-small a-hover" href="#">Fashion</a></li>
+                        </ul>
+                        <div class="title-group">
+                            <span>Categories</span>
+                        </div>
+                        <ul class="rc-post rm-bd">
+                            <li><a class="title-small a-hover" href="#">November 2015</a></li>
+                            <li><a class="title-small a-hover" href="#">October 2015</a></li>
+                            <li><a class="title-small a-hover" href="#">Fearture</a></li>
+                            <li><a class="title-small a-hover" href="#">Health</a></li>
+                            <li><a class="title-small a-hover" href="#">Music</a></li>
+                            <li><a class="title-small a-hover" href="#">Photography</a></li>
+                            <li><a class="title-small a-hover" href="#">Repices</a></li>
+                            <li><a class="title-small a-hover" href="#">Sport</a></li>
+                            <li><a class="title-small a-hover" href="#">Tech</a></li>
+                            <li><a class="title-small a-hover" href="#">Travel</a></li>
+                            <li><a class="title-small a-hover" href="#">World</a></li>
+                        </ul>
+                        <div class="title-group">
+                            <span>Meta</span>
+                        </div>
+                        <ul class="rc-post rm-bd">
+                            <li><a class="title-small a-hover" href="#">Log in</a></li>
+                            <li><a class="title-small a-hover" href="#">Entries RSS</a></li>
+                            <li><a class="title-small a-hover" href="#">Comment RSS</a></li>
+                            <li><a class="title-small a-hover" href="#">WordPress.org</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="fl-us">
+            <h3 class="all-center">FOLLOW US ON INSTAGRAM <span>@ADIDAS</span></h3>
+            <div class="row">
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+                <div class="col-2">
+                        <div class="form-inner">
+                            <a href="#">
+                                <div class="wrap-img">
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="row footer-row-1">
+                <div class="col-4 col-mb">
+                    <h3>EDITOR PICKS</h3>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4 col-mb">
+                    <h3>POPULAR POSTS</h3>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="art-flex">
+                        <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
+                        <div class="info-group">
+                            <a href="#" class="title-small a-hover">Things to Look For in a
+                                Financial Trading Platform And More word </a>
+                            <div class="text-info">
+                                <span><a href="#">Diane Cotez</a></span>
+                                <span>-</span>
+                                <span>November 16, 2015</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-4 ft-cat col-mb">
+                    <h3>POPULAR CATEGORY</h3>
+                    <ul>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Tech</span>
+                                <span>7</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Heath</span>
+                                <span>12</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Fashion</span>
+                                <span>10</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Photography</span>
+                                <span>25</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Sport</span>
+                                <span>2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Travel</span>
+                                <span>5</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Recipes</span>
+                                <span>48</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="a-hover" href="#">
+                                <span>Music</span>
+                                <span>18</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr width="80%">
+            <div class="row footer-row-2">
+                <div class="col-3 col-mb all-center">
+                    <img src="assets/images/logo.png" alt="">
+                </div>
+                <div class="col-5 col-mb">
+                    <h3>ABOUT US</h3>
+                    <p class="text-exerpt">Newspaper is your news, entertainment, music fashion website. We provide you
+                        with the latest breaking news and videos straight from the entertainment industry.</p>
+                    <p class="text-exerpt">
+                        <span>Contact us: </span>
+                        <span> <a href="mailto: abc@gmail.com" style="color:#375c7b;">contact@yoursite.com</a></span>
+                    </p>
+                </div>
+                <div class="col-4 col-mb">
+                    <h3>FOLLOW US</h3>
+                    <p class="icon-fl">
+                        <span>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-soundcloud"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-vimeo-v"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-vk"></i></a>
+                        </span>
+                        <span>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-3 text-exerpt">
+            <div class="container">
+                <div class="row add-space">
+                    <p>© Copyright - Newspaper WordPress Theme by TagDiv</p>
+                    <div class="contact all-center">
+                        <a href="#">Advertisement</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact us</a>
+                        <a href="#">Buy now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="top" class="scrollTop all-center" style="display: flex;"><i class="fas fa-angle-up"></i></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/js/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/style.js"></script>
+</body>
+
+</html>

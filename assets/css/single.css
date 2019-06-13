@@ -1,0 +1,190 @@
+.title-single-group .info-group{
+    text-align: center;
+    margin-top: 16px;
+}
+.title-single-group .info-group .view i,.title-single-group .info-group .comment i{
+    padding: 0 4px;
+}
+.title-single-group .info-group .view,.title-single-group .info-group .comment{
+    margin-left: 24px;
+}
+.title-single-group .info-group h1{
+    font-size: 42px;
+    padding: 0 8%;
+    margin: 16px 0 20px 0;
+}
+.title-single-group .info-group .btn-cat{
+    background: #333;
+    padding: 4px 6px;
+    margin-right: 4px;
+    font-size: 10px;
+}
+main .btn-cat a {
+    color: #fff;
+}
+main .icon-fl i {
+    font-size: 14px;
+    width: 40px;
+    margin: 16px 2px ;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255,255,255,.03);
+    border-radius: 2px;
+}
+main .icon-fl i:hover{
+    opacity: 0.7;
+    transition: 0.15s;
+}
+main .icon-fl span:nth-child(1) i{
+    background: #516eab;
+}
+main .icon-fl span:nth-child(2) i{
+    background: #29c4f6;
+}
+main .icon-fl span:nth-child(3) i{
+    background: #eb3f25;
+}
+main .icon-fl span:nth-child(4) i{
+    background: #ca2029;
+}
+
+#content-post .wrap-img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 440px;
+}
+#content-post p{
+    font-family: "Open Sans";
+    font-size: 17px;
+    color: #ccc;
+    line-height: 31px;
+    word-wrap: break-word;
+    margin-bottom: 26px;
+    margin-top: 0;
+}
+#content-post blockquote{
+    font-family: "Open Sans";
+    font-size: 13px;
+    padding: 10px 0;
+    text-align: center;
+    color: #ccc;
+    font-style: italic;
+    border-left: 2px solid #375c7b;
+    line-height: 31px;
+    background: #212121;
+    margin: 0 0 26px 0;
+}
+#content-post blockquote.classic-bq{
+    font-family: "Open Sans";
+    color: #385c7b;
+    border: none;
+    font-size: 30px;
+    background: none;
+}
+#content-post figure{
+    margin: 0;
+}
+#content-post figure .fg-caption{
+    font-family: Verdana, Geneva, sans-serif;
+    margin: 6px 0 26px 0;
+    font-size: 11px;
+    font-style: italic;
+    font-weight: normal;
+    line-height: 17px;
+}
+.share-post {
+    border-bottom: 1px solid#444;
+    border-top: 1px solid#444;
+    display: flex;
+    margin-bottom: 28px;
+}
+.share-post p{
+    margin: 0;
+}
+.share-post .share-label{
+    border: 1px solid #444;
+    display: inline-block;
+    padding: 13px 12px 10px 12px;
+    margin: 16px 16px 16px 0;
+    font-size: 12px;
+    color: #ccc;
+}
+.share-post .share-label span{
+    padding: 0 8px;
+}
+.share-post .share-label i{
+    margin: 1px;
+    padding-right: 12px;
+    border-right: 1px solid #444;
+}
+
+.post-next-prev {
+    margin-bottom: 32px;
+}
+.author-box{
+    border: 1px solid#444;
+    margin-bottom: 28px;
+    padding: 16px;
+}
+.author-box .art-flex .wrap-img{
+    width: 96px;
+    height: 96px;
+}
+
+.author-box .art-flex .info-group {
+    padding: 16px 0 0 16px;
+    margin: 0;
+}
+.author-box .art-flex .info-group i{
+    padding: 0 8px;
+}
+#comment-box textarea, #comment-box input {
+    width: 100%;
+    background: none;
+    border: 1px solid #444444;
+    margin: 10px 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 2px;
+    outline: none;
+    padding: 6px;
+    line-height: 21px;
+}
+#comment-box textarea:focus , #comment-box input:focus{
+    border-color:#eee;
+}
+#comment-box label input{
+    width: unset;
+}
+#comment-box label span{
+    line-height: 32px;
+    margin-left: 8px;
+    color: #aaa;
+}
+#comment-box label{
+    display: flex;
+}
+#comment-box button{
+    background: #444;
+    width: 24%;
+    padding: 8px;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    margin: 16px 0;
+}
+#comment-box button:hover{
+    background: #355c7b;
+}
+@media screen and (max-width: 767px){
+    .title-single-group .info-group h1 {
+        font-size: 20px;
+        padding: 0 0%;
+    }
+    #comment-box button {
+        width: 100%;
+    }
+}
