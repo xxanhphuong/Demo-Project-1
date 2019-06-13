@@ -1,31 +1,31 @@
 
-var carouselSection1 = document.getElementById('carousel-section-1');
-var listitem = carouselSection1.querySelectorAll('.row .col-3');
-var item = carouselSection1.querySelector('.row .col-3');
-var width = item.clientWidth;
-var btnNext = document.getElementById('next');
-var btnPrev = document.getElementById('prev');
-var count = 0;
-function carousel(dir){
-  console.log(dir);
-  var totalItem =  listitem.length;
-  if(dir === "left"){
-    ++count;
-  }
-  else{
-    --count;
-  }
-  console.log(count);
-  carouselSection1.style.transform = 'translateX(-' + count * width + 'px)';
-  // btnPrev.style.display = count < 0 ? "block" : "none";
-  // btnNext.style.display = count > 4-totalItem ? "block" : "none";
-}
-btnPrev.addEventListener("click", function (e) {
-  carousel("right");
-});
-btnNext.addEventListener("click", function (e) {
-  carousel("left");
-});
+// var carouselSection1 = document.getElementById('carousel-section-1');
+// var listitem = carouselSection1.querySelectorAll('.row .col-3');
+// var item = carouselSection1.querySelector('.row .col-3');
+// var width = item.clientWidth;
+// var btnNext = document.getElementById('next');
+// var btnPrev = document.getElementById('prev');
+// var count = 0;
+// function carousel(dir){
+//   console.log(dir);
+//   var totalItem =  listitem.length;
+//   if(dir === "left"){
+//     ++count;
+//   }
+//   else{
+//     --count;
+//   }
+//   console.log(count);
+//   carouselSection1.style.transform = 'translateX(-' + count * width + 'px)';
+//   // btnPrev.style.display = count < 0 ? "block" : "none";
+//   // btnNext.style.display = count > 4-totalItem ? "block" : "none";
+// }
+// btnPrev.addEventListener("click", function (e) {
+//   carousel("right");
+// });
+// btnNext.addEventListener("click", function (e) {
+//   carousel("left");
+// });
 
 $('#carousel-trending').slick({
   infinite: true,
