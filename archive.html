@@ -13,6 +13,23 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+
+#section-1 .row{
+    overflow: hidden;
+}
+#slider {
+    display:flex;
+    transition: 0.5s;
+    transform: translateX(-278px);
+}
+.item {
+    display:inline-block;
+}
+.btn {
+    outline: transparent;
+}
+    </style>
     <title>Archives page</title>
 </head>
 
@@ -84,9 +101,9 @@
                 <div class="container">
                     <div class="row">
                         <!-- <div class="search-form">
-                            <input type="text">
-                            <button>Search</button>
-                        </div> -->
+                                    <input type="text">
+                                    <button>Search</button>
+                                </div> -->
                         <div class="left-menu-main">
                             <div class="row">
                                 <div class="logo all-center">
@@ -102,8 +119,10 @@
                                             <li class="menu-item">
                                                 <div class="row">
                                                     <div class="col-2 cat-group">
-                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'All')" href="#">All</a>
-                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'Art')"href="#">Art</a>
+                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'All')"
+                                                            href="#">All</a>
+                                                        <a class="tablinks" onmouseover="openMenuArt(event, 'Art')"
+                                                            href="#">Art</a>
                                                         <a href="#">Heathy</a>
                                                         <a href="#">Music</a>
                                                         <a href="#">Recipes</a>
@@ -206,7 +225,7 @@
                                                 </div>
                                             </li>
                                         </ul>
-    
+
                                     </li>
                                     <li>
                                         <a href="archive-fashion.html">Fashion <i class="fas fa-chevron-down"></i> </a>
@@ -230,11 +249,11 @@
                             <div class="search-form">
                                 <input type="text">
                                 <button>Search</button>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
         </div>
     </header>
     <main>
@@ -280,8 +299,8 @@
 
             <section id="section-1">
                 <div class="row">
-                    <!-- <div id="carousel-section-1"> -->
-                        <div class="col-3 col-mb">
+                    <div id="slider">
+                        <div class="col-3 col-mb item">
                             <div class="form-inner">
                                 <a href="#">
                                     <img class="wrap-img" src="assets/images/big-wrapper.jpg" alt="">
@@ -296,7 +315,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-mb">
+                        <div class="col-3 col-mb item">
                             <div class="form-inner">
                                 <a href="#">
                                     <img class="wrap-img" src="assets/images/menu-art-2.jpg" alt="">
@@ -311,7 +330,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-mb">
+                        <div class="col-3 col-mb item">
                             <div class="form-inner">
                                 <a href="#">
                                     <img class="wrap-img" src="assets/images/menu-art-3.jpg" alt="">
@@ -326,7 +345,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-mb">
+                        <div class="col-3 col-mb item">
                             <div class="form-inner">
                                 <a href="#">
                                     <img class="wrap-img" src="assets/images/menu-art-4.jpg" alt="">
@@ -341,10 +360,10 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- <div class="col-3 col-mb">
+                        <div class="col-3 col-mb item">
                             <div class="form-inner">
                                 <a href="#">
-                                    <img class="wrap-img" src="assets/images/menu-art-4.jpg" alt="">
+                                    <img class="wrap-img" src="assets/images/article-10.jpg" alt="">
                                 </a>
                                 <div class="inf title-large">
                                     <a href="#">The Fashion News to Know Today</a>
@@ -356,24 +375,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-3 col-mb">
-                            <div class="form-inner">
-                                <a href="#">
-                                    <img class="wrap-img" src="assets/images/menu-art-4.jpg" alt="">
-                                </a>
-                                <div class="inf title-large">
-                                    <a href="#">The Fashion News to Know Today</a>
-                                    <div class="text-info">
-                                        <span><a href="#">Diane Cotez</a></span>
-                                        <span>-</span>
-                                        <span>November 16, 2015</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                    <!-- </div> -->
-                    <!-- <button id = "prev">prev</button>
-                    <button id = "next">next</button> -->
+                    </div>
+                    <button id = "preButton">prev</button>
+                    <button id = "nextButton">next</button>
                 </div>
             </section>
 
@@ -533,7 +537,7 @@
                 </div>
             </section>
         </div>
-        
+
     </main>
     <footer>
         <div class="container">
@@ -722,9 +726,9 @@
         <div id="top" class="scrollTop all-center" style="display: flex;"><i class="fas fa-angle-up"></i></div>
     </footer>
     <script src="https://code.jquery.com/jquery-1.11.0.min.js" integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
-    crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
-    <script type="text/javascript" src="assets/js/style.js"></script>
+    <script type="text/javascript" src="assets/js/carousel.js"></script>
 </body>
 
 </html>
