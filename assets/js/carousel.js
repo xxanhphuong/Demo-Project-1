@@ -12,13 +12,16 @@ preBtn.addEventListener("click", backSlider);
 const createClone = function genClone() {
     const numItems = slider.getElementsByClassName("item").length;
     const firstChild = slider.getElementsByClassName("item").item(0); // xác định first slide
+    const secondChild = slider.getElementsByClassName("item").item(1);
     const lastChild = slider.getElementsByClassName("item").item(numItems - 1); // xác định last slide
     const cloneLastChild = lastChild.cloneNode(true); // thực hiện tạo ra 1 last slide mới 
     const cloneFirstChild = firstChild.cloneNode(true); // thực hiện tạo ra 1 first slide mới 
+    const cloneSecondChild = secondChild.cloneNode(true); // thực hiện tạo ra 1 first slide mới 
     cloneLastChild.classList += " clone"; // 
     cloneFirstChild.classList += " clone"; // add class clone (bạn có thể add bất cứ class gì bạn muốn)
     slider.insertBefore(cloneLastChild, firstChild); // thêm last slide vào phía trước slide đầu tiên 
     slider.insertBefore(cloneFirstChild, lastChild.nextSibling); // thêm first slide vào cuối slider 
+    slider.insertBefore(cloneSecondChild, lastChild.nextSibling); // thêm first slide vào cuối slider 
     numItem += 2;
 }
 createClone();
@@ -45,7 +48,7 @@ function checkPosition(newValue) {
     distantSlide = "translate(" + (currentPosition) + "px)";
     slider.style.transform = distantSlide;
 
-    if (currentPosition == -(widthItem * (numItem - 2))) {
+    if (currentPosition == -(widthItem * (numItem - 3))) {
         slider.style.transform = "translateX(" + currentPosition + "px)";
         setTimeout(function () {
             slider.style.transition = "0s";
@@ -54,13 +57,13 @@ function checkPosition(newValue) {
         }, 400);
     } else {
         slider.style.transition = "0.5s";
+        console.log(currentPosition);
     }
     // khi slider tới vị trí của slide cuối cùng nếu bấm next slide tiếp thì sẽ thực hiện translate đến vị trí của clone element cuối slide 
     // clone element cuối slide ở đây là 
-    // <div class="item red clone">1</div>
+    // <div class="clone">1</div>
     // ngay khi slide đến clone element cuối ngay lập tức remove transition của slider và dịch chuyển về slide đầu tiên của slider 
     // và sau khi dịch chuyển về slide đầu tiên add transition trở lại slider
-    // hình dưới đây sẽ giãi thích vì sao cần remove transition
     if (currentPosition == widthItem) {
         console.log(currentPosition)
         slider.style.transform = "translateX(" + currentPosition + "px)";
@@ -75,8 +78,7 @@ function checkPosition(newValue) {
     }
     // khi slider lùi tới vị trí của slide đầu tiên  nếu bấm back slide tiếp thì sẽ thực hiện translate đến vị trí của clone element đầu slide
     // clone element cuối cùng ở đây là:
-    // <div class="item yellow clone">3</div>
+    // <div class="clone"> cuoi cung</div>
     // ngay khi slide đến clone element đầu slide ngay lập tức remove transition của slider và dịch chuyển về slide cuối  của slider 
     // và sau khi dịch chuyển về slide cuối add transition trở lại slider
-    // hình dưới đây sẽ giãi thích vì sao cần remove transition
 }

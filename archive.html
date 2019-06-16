@@ -29,6 +29,23 @@
 .btn {
     outline: transparent;
 }
+#nextButton:hover, #preButton:hover{
+    background: #365c7b;
+    color: white !important;
+    border: 1px solid #365c7b;
+    transition: 0.1s;
+}
+#nextButton, #preButton{
+    cursor: pointer;
+    background: none;
+    width: 25px;
+    outline: none;
+    height: 25px;
+    margin: 16px 4px 0 0;
+    /* padding: 6px 9px; */
+    border: 1px solid #444;
+    color: #444;
+}
     </style>
     <title>Archives page</title>
 </head>
@@ -376,8 +393,8 @@
                             </div>
                         </div>
                     </div>
-                    <button id = "preButton">prev</button>
-                    <button id = "nextButton">next</button>
+                    <button id = "preButton" class="a-hover"><i class="fas fa-angle-left"></i></button>
+                    <button id = "nextButton" class="a-hover"> <i class="fas fa-angle-right"></i> </button>
                 </div>
             </section>
 
@@ -729,6 +746,7 @@
         crossorigin="anonymous"></script>
     <script type="text/javascript" src="assets/js/slick.min.js"></script>
     <script type="text/javascript" src="assets/js/carousel.js"></script>
+    <script type="text/javascript" src="assets/js/style.js"></script>
 </body>
 
 </html>
