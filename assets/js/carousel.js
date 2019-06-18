@@ -16,12 +16,12 @@ const createClone = function genClone() {
     const lastChild = slider.getElementsByClassName("item").item(numItems - 1); // xác định last slide
     const cloneLastChild = lastChild.cloneNode(true); // thực hiện tạo ra 1 last slide mới 
     const cloneFirstChild = firstChild.cloneNode(true); // thực hiện tạo ra 1 first slide mới 
-    const cloneSecondChild = secondChild.cloneNode(true); // thực hiện tạo ra 1 first slide mới 
+    const cloneSecondChild = secondChild.cloneNode(true); // thực hiện tạo ra 1 second slide mới 
     cloneLastChild.classList += " clone"; // 
     cloneFirstChild.classList += " clone"; // add class clone (bạn có thể add bất cứ class gì bạn muốn)
     slider.insertBefore(cloneLastChild, firstChild); // thêm last slide vào phía trước slide đầu tiên 
     slider.insertBefore(cloneFirstChild, lastChild.nextSibling); // thêm first slide vào cuối slider 
-    slider.insertBefore(cloneSecondChild, lastChild.nextSibling); // thêm first slide vào cuối slider 
+    slider.insertBefore(cloneSecondChild, lastChild.nextSibling); // thêm second slide vào cuối slider 
     numItem += 2;
 }
 createClone();
