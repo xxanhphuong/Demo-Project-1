@@ -35,6 +35,7 @@ a{
 button{
     cursor: pointer;
 }
+
 .a-hover:hover {
     color: #385c7b !important;
     cursor: pointer;
