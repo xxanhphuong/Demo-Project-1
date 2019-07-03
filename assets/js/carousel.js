@@ -3,6 +3,9 @@ var preBtn = document.getElementById("preButton");
 var slider = document.getElementById("slider");
 var widthItem = document.querySelector(".item").offsetWidth;
 var numItem = slider.querySelectorAll(".item").length;
+slider.style.transition = "0s";
+slider.style.transform = "translateX(-" + widthItem + "px)";
+// reponsive 
 var currentPosition = 0;
 // 1 biến để giúp ta control được slider đang ở đâu
 var widthSlider = numItem * widthItem;
@@ -26,11 +29,13 @@ const createClone = function genClone() {
 }
 createClone();
 
+
 function nextSlider() {
     currentPosition -= widthItem;
     checkPosition(currentPosition);
 }
 
+setInterval(nextSlider, 4000);
 function backSlider() {
     currentPosition += widthItem;
     checkPosition(currentPosition);
@@ -56,7 +61,7 @@ function checkPosition(newValue) {
             slider.style.transform = "translateX(" + currentPosition + "px)";
         }, 400);
     } else {
-        slider.style.transition = "0.5s";
+        slider.style.transition = "0.7s";
         console.log(currentPosition);
     }
     // khi slider tới vị trí của slide cuối cùng nếu bấm next slide tiếp thì sẽ thực hiện translate đến vị trí của clone element cuối slide 
@@ -74,7 +79,7 @@ function checkPosition(newValue) {
         }, 400);
     }
     else {
-        slider.style.transition = "0.5s";
+        slider.style.transition = "0.7s";
     }
     // khi slider lùi tới vị trí của slide đầu tiên  nếu bấm back slide tiếp thì sẽ thực hiện translate đến vị trí của clone element đầu slide
     // clone element cuối cùng ở đây là:

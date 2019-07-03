@@ -311,7 +311,6 @@ section{
     background: #222222;
     overflow: hidden;
     overflow-y: auto;
-    height: 76.5%;
 }
 /* width */
 #video .video-list::-webkit-scrollbar {
